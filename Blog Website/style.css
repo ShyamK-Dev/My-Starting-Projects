@@ -1,0 +1,687 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+:root{
+    --lightcolor:#F3F9D2;
+    --darkcolor:#92B4A7;
+    --textcolor:#946E83;
+    --lighttext:#cfb2c2;
+    --darktext:#615055;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+html,body{
+    font-family: "Inter", sans-serif;
+    font-weight: 300;
+    line-height: 1.4;
+    scroll-behavior: smooth;
+
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+body{
+    background-color:  #fcffee;
+}
+
+header{
+    position: sticky;
+    top: 0;
+    background-color: var(--lightcolor);
+    box-shadow: 3.5px 3.5px 4px #c6cca5;
+    z-index: 100px;
+}
+/* nav section */
+.navigation{
+    margin: 0 auto;
+    max-width: 130rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    color: var(--textcolor);
+}
+
+nav ul{
+    display: flex;
+    gap: 1.5rem;
+    font-size: 1.6rem;
+}
+
+nav ul li{
+    border-bottom: 2px solid transparent; 
+}
+
+nav ul li:hover{
+    border-bottom: 2px solid yellowgreen;
+    cursor: pointer;
+}
+
+nav h1{
+    font-size: 2.5rem;
+}
+
+nav ul li i{
+    font-size: 1.8rem;
+}
+
+main{
+    margin: 0 auto;
+    max-width: 120rem;
+    
+}
+/* hero section */
+#hero{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   color: var(--textcolor);
+
+}
+
+.hero-image img{
+    height: 30rem;
+    border-radius: 3rem;
+    
+}
+
+.hero-image{
+    margin: 10rem;
+    padding-right: 2rem;
+}
+
+.hero-content h1{
+    font-size: 9rem;
+    padding-left: 3rem;
+
+}
+
+.hero-content h3{
+    font-size: 3rem;
+    font-weight: 300;
+    padding-left: 3rem;
+    color: var(--lighttext);
+}
+
+/* long card section */
+.long-card img{
+    height: 25rem;
+}
+
+.long-card{
+    display: flex;
+    margin: 2rem 1rem;
+    box-shadow: 0 5px 4px  #c6cca5;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #c6cca5;
+    border-radius: 1rem;
+    overflow: hidden;
+    color: var(--textcolor);
+}
+
+.long-content{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    gap: 1rem;
+}
+
+.long-card .long-content h2{
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.long-card .long-content p{
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--lighttext);
+}
+
+.long-content .status p{
+    font-size: 1.4rem;
+}
+.long-content .status h4{
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+.long-content .status{
+    display: flex;
+    justify-content: space-between;
+}
+
+.read-btn{
+    all: unset;
+    font-weight: 600;
+    color: var(--textcolor);
+    border-bottom:1px solid transparent;
+}
+
+.read-btn:hover{
+    border-bottom: 1px solid yellowgreen;
+}
+
+/* cards section */
+
+.v-card{
+    display: flex;
+    flex-direction: column-reverse;
+    max-width: 320px;
+    box-shadow: 0 5px 4px  #c6cca5;
+    align-items: center;
+    border: 1px solid #c6cca5;
+    border-radius: 0.8rem;
+    overflow: hidden;
+}
+
+.card-container{
+    margin: 5rem auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px,1fr));
+}
+
+.card-wraper{
+    display: flex;
+     justify-content: center;
+}
+
+.v-card img{
+    width: 100%;
+    height: 100%;
+}
+
+.v-card h2{
+    color: var(--textcolor);
+}
+
+.v-card p{
+    color: var(--lighttext);
+}
+
+/* big card */
+
+.big-card .long-content h2{
+    font-size: 4rem;
+}
+
+.big-card .long-content img{
+    height: 100%;
+    width: 100%;
+}
+
+.big-card{
+    margin: 5rem auto;
+}
+
+/* footer section */
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem;
+    margin: 0 auto;
+    background-color: var(--darkcolor);
+}
+
+footer ul{
+    display: flex;
+    gap: 2rem;
+}
+
+footer p{
+    font-size: 1.5rem;
+    color: #615055;
+}
+
+footer ul li{
+    font-size: 1.5rem;
+    color: #615055;
+}
+
+/* post section */
+.banner img{
+    width: 100%;
+}
+
+.post{
+    color: var(--darktext);
+}
+
+.post h1{
+    font-size: 3rem;
+}
+
+.about-author{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.article-hr{
+    margin: 3rem 0;
+}
+
+article{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    margin-bottom: 2rem;
+    color: var(--darktext);
+}
+
+article p{
+    font-size: 2rem;
+}
+
+article h2{
+    font-size: 3rem;
+}
+
+/* media query */
+@media (max-width:1024px){
+    .hero-content h1{
+    font-size: 7rem;
+    text-align: center;
+    }
+
+    .hero-content h3{
+        font-size: 2.7rem;
+        text-align: center;
+    }  
+    
+    .long-card{
+        margin: 2rem 5rem;
+    }
+
+    .card-container{
+        margin: 5rem 1.5rem;
+    }
+
+    .card-wraper{
+        margin: 0 1rem;
+    }
+
+    .big-card .long-content h2{
+        font-size: 3.5rem;
+    }
+
+    .banner img{
+        width: 90%;
+    }
+
+    .banner{
+        display: flex;
+        justify-content: center;
+    }
+
+    .post h1{
+        margin-left: 5rem;
+    }
+
+    .about-author h3{
+        margin-left: 5rem;
+    }
+
+    article p{
+        margin: 0 5rem;
+    }
+
+    article h2{
+        margin-left: 5rem;
+    }
+}
+
+@media (max-width:768px){
+    .hero-image{
+        margin: 5rem;
+        padding-right: 0;
+    }
+
+    .hero-image img{
+        height: 27rem;
+        
+    }
+
+    .hero-content h1{
+        font-size: 5rem;
+        padding-left: 4rem;
+    }
+
+    .hero-content h3{
+        font-size: 2.4rem;
+        padding-left: 4rem;
+    }
+
+    .long-card{
+        margin: 2rem 4rem;
+    }
+
+    .long-card .long-content h2{
+        font-size: 1.9rem;
+        font-weight: 500;
+    }   
+
+    .long-card .long-content p{
+        font-size: 1.3rem;
+    }
+
+    .long-content .status p{
+        font-size: 1.2rem;
+    }
+    .long-content .status h4{
+        font-size: 1.2rem;
+    }
+
+    .long-card img{
+        height: 23rem;
+    }
+
+    .card-container{
+        gap: 2rem;
+    }
+
+     .post h1{
+        margin-left: 4rem;
+        font-size: 2.2rem;
+    }
+
+    .about-author h3{
+        margin-left: 4rem;
+    }
+
+    article p{
+        margin: 0 4rem;
+        font-size: 1.9rem;
+    }
+
+    article h2{
+        margin-left: 4rem;
+        font-size: 2.2rem;
+    }
+}
+
+@media (max-width:425px){
+    nav h1{
+        font-size: 2rem;
+    }
+
+    nav ul{
+        gap: 1rem;
+        font-size: 1.3rem;
+    }
+
+    nav ul li i{
+        font-size: 1.4rem;
+    }
+
+
+    #hero{
+        display: flex;
+        flex-direction: column;
+    }
+   
+    .hero-image{
+        margin: 3rem;
+    }
+
+    .hero-image img{
+        height: 22rem;
+        
+    }
+
+    .hero-content h1{
+        font-size: 4rem;
+        padding-top: 3.5rem;
+        padding-left: 0;
+    }
+
+     .hero-content h3{
+        font-size: 2.4rem;
+        padding-left: 0;
+        padding-top: 1.5rem;
+    }
+
+    .long-card{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .big-card img{
+        min-width: 100%;
+    }
+
+    footer p{
+        font-size: 1.1rem;
+    }
+
+    footer ul li{
+        font-size: 1.2rem;
+    }
+
+    footer ul{
+        gap: 1rem;
+    }
+
+    .post h1{
+        margin-left: 2rem;
+        font-size: 1.3rem;
+    }
+
+    .about-author h3{
+        margin-left: 2rem;
+        font-size: 1rem;
+    }
+
+    .about-author p{
+        font-size: 1rem;
+    }
+
+    article p{
+        margin: 0 3rem;
+        font-size: 1.3rem;
+    }
+
+    article h2{
+        margin-left: 3rem;
+        font-size: 1.5rem;
+    }
+
+    article{
+        gap: 2rem;
+    }
+} 
+
+@media (max-width:375px){
+    .hero-content h1{
+        font-size: 3.4rem;
+    }
+
+    .hero-content h3{
+        font-size: 2rem;
+    }
+
+    .hero-image img{
+        height: 20rem;
+        
+    }
+
+    .long-card{
+        margin: 2rem 3rem;
+    }
+
+    .long-card img{
+        height: 21rem;
+    }
+
+    .long-card .long-content h2{
+        font-size: 1.7rem;
+        text-align: center;
+    } 
+
+    .long-card .long-content p{
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    .long-content .status p{
+        font-size: 1.1rem;
+    }
+    .long-content .status h4{
+        font-size: 1.1rem;
+    }
+
+    .post h1{
+        margin-left: 2rem;
+        font-size: 1.1rem;
+    }
+
+    .about-author h3{
+        margin-left: 2rem;
+        font-size: 0.8rem;
+    }
+
+    .about-author p{
+        font-size: 0.8rem;
+    }
+
+    article p{
+        margin: 0 3rem;
+        font-size: 1.2rem;
+    }
+
+    article h2{
+        margin-left: 3rem;
+        font-size: 1.4rem;
+    }
+
+   
+
+}
+
+@media (max-width:320px){
+    nav h1{
+        font-size: 1.5rem;
+    }
+
+    nav ul{
+        gap: 0.6rem;
+        font-size: 1rem;
+    }
+
+    nav ul li i{
+        font-size: 1.2rem;
+    }
+
+    .hero-content h1{
+        font-size: 2.8rem;
+    }
+
+    .hero-content h3{
+        font-size: 1.6rem;
+    }
+
+    .hero-image img{
+        height: 15rem;
+        
+    }
+
+    .long-card img{
+        height: 17.5rem;
+    }
+
+    .long-card .long-content h2{
+        font-size: 1.5rem;
+        text-align: center;
+    } 
+
+    .long-card .long-content p{
+        font-size: 1.1rem;
+        text-align: center;
+    }
+
+    .long-content .status p{
+        font-size: 1rem;
+    }
+    .long-content .status h4{
+        font-size: 1rem;
+    }
+
+    .card-container{
+        margin: 5rem auto;
+        
+    }
+
+    .card-wraper    {
+        max-width:  260px;
+       place-self: center;
+    }
+
+    .long-content h2{
+        font-size: 1.5rem;
+        text-align: center;
+        font-weight: 500;
+    }
+
+    .long-content p{
+        font-size: 1.1rem;
+        text-align: center;
+    }
+
+    .long-content .status p{
+        font-size: 1rem;
+    }
+    .long-content .status h4{
+        font-size: 1rem;
+    }
+
+    footer p{
+        font-size: 0.8rem;
+    }
+
+    footer ul li{
+        font-size: 1rem;
+    }
+
+    footer ul{
+        gap: 0.7rem;
+    }
+
+    .post h1{
+        margin-left: 1.5rem;
+        font-size: 1rem;
+    }
+
+    .about-author h3{
+        margin-left: 1.5rem;
+        font-size: 0.7rem;
+    }
+
+    .about-author p{
+        font-size: 0.7rem;
+    }
+
+    article p{
+        margin: 0 2rem;
+        font-size: 1.1rem;
+    }
+
+    article h2{
+        margin-left: 2rem;
+        font-size: 1.3rem;
+    }
+}
